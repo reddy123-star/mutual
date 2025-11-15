@@ -1,0 +1,5 @@
+{
+  "name": "Mutual Fund Insight",
+  "description": "A web platform that provides detailed information about mutual funds, helping users understand structures, risks, and investment decisions. It serves Investors, Financial Advisors, Data Analysts, and Admins with role-specific tools.",
+  "requestFramePermissions": []
+}
