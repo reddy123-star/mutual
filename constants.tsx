@@ -1,4 +1,3 @@
-
 import { UserRole, User, MutualFund, Article, MutualFundCategory, RiskLevel } from './types';
 import type { FC, SVGProps } from 'react';
 
@@ -22,6 +21,9 @@ export const IconFileText: FC<SVGProps<SVGSVGElement>> = (props) => (
 );
 export const IconBarChart: FC<SVGProps<SVGSVGElement>> = (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>
+);
+export const IconInfo: FC<SVGProps<SVGSVGElement>> = (props) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
 );
 
 export const USERS: User[] = [
@@ -101,20 +103,24 @@ export const NAV_ITEMS = {
     { name: 'Explore Funds', page: 'explore', icon: IconSearch },
     { name: 'My Portfolio', page: 'portfolio', icon: IconBriefcase },
     { name: 'Education', page: 'education', icon: IconBookOpen },
+    { name: 'About Us', page: 'about', icon: IconInfo },
   ],
   [UserRole.FinancialAdvisor]: [
     { name: 'Dashboard', page: 'dashboard', icon: IconLayoutDashboard },
     { name: 'Explore Funds', page: 'explore', icon: IconSearch },
     { name: 'Content Management', page: 'content', icon: IconFileText },
+    { name: 'About Us', page: 'about', icon: IconInfo },
   ],
   [UserRole.DataAnalyst]: [
     { name: 'Dashboard', page: 'dashboard', icon: IconLayoutDashboard },
     { name: 'Data & Trends', page: 'analysis', icon: IconBarChart },
     { name: 'Fund Management', page: 'funds', icon: IconBriefcase },
+    { name: 'About Us', page: 'about', icon: IconInfo },
   ],
   [UserRole.Admin]: [
     { name: 'Dashboard', page: 'dashboard', icon: IconLayoutDashboard },
     { name: 'User Management', page: 'users', icon: IconUsers },
     { name: 'Content Overview', page: 'content', icon: IconFileText },
+    { name: 'About Us', page: 'about', icon: IconInfo },
   ],
 };

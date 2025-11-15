@@ -1,8 +1,8 @@
-
 import React, { useState, useMemo } from 'react';
 import { User, MutualFund, RiskLevel, MutualFundCategory } from '../types';
 import { NAV_ITEMS, MUTUAL_FUNDS, USERS, ARTICLES } from '../constants';
 import PerformanceChart from './PerformanceChart';
+import AboutUs from './AboutUs';
 
 interface DashboardProps {
   currentUser: User;
@@ -180,6 +180,7 @@ const Dashboard: React.FC<DashboardProps> = ({ currentUser, onLogout }) => {
                     </div>
                 </div>
             );
+            case 'about': return <AboutUs />;
             default: return <div>Page not found</div>;
         }
     };
